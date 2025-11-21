@@ -28,14 +28,15 @@ public class Main {
                 "Bob"));
 
         Iterator<String> it = names.iterator();
+            it.forEachRemaining(element -> System.out.println(element));
 
         while (it.hasNext()) {
-            String name = it.next();
-            if (names.contains("John")) {
-                it.remove();
-            }
-            System.out.println(it);
-            System.out.println(name);
+            // String name = it.next();
+
+            // if ("john".equals(name)) {
+            //     it.remove();
+            // }
+            // System.out.println(name);
         }
 // Output: John, Jane, Bob
         // List<Integer> numbers = new ArrayList<>(Arrays.asList(1, 2, 3, 4, 5));

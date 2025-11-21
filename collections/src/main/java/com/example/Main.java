@@ -14,7 +14,15 @@ public class Main {
 
         list.contains("1");
 
-        System.out.println(list);
+        // System.out.println(list);
+        
+        for (String element : list) {
+            System.out.println(element);
+        }
+        for(int i = 0; i < list.size(); i++){
+            System.out.println(list.get(i));
+
+        }
 
     }
 }
